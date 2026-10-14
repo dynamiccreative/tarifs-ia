@@ -1,0 +1,439 @@
+{
+    "schema": "dc-tarifs-ia/1",
+    "genere_le": "2026-10-14",
+    "litellm": {
+        "commit": "426ab45f2dac",
+        "date": "2026-10-13"
+    },
+    "hypotheses": {
+        "appel_texte": {
+            "entree": 3000,
+            "sortie": 2500
+        }
+    },
+    "modeles": {
+        "claude/claude-fable-5-1": {
+            "unite": "tokens",
+            "entree": 10.0,
+            "sortie": 50.0,
+            "cache_ecriture": 12.5,
+            "cache_lecture": 0.25,
+            "par_appel": 0.155,
+            "origine": "litellm:claude-fable-5-1",
+            "statut": "actuel"
+        },
+        "claude/claude-opus-5-5": {
+            "unite": "tokens",
+            "entree": 4.0,
+            "sortie": 20.0,
+            "cache_ecriture": 5.0,
+            "cache_lecture": 0.2,
+            "par_appel": 0.062,
+            "origine": "litellm:claude-opus-5-5",
+            "statut": "actuel"
+        },
+        "claude/claude-opus-5": {
+            "unite": "tokens",
+            "entree": 5.0,
+            "sortie": 25.0,
+            "cache_ecriture": 6.25,
+            "cache_lecture": 0.5,
+            "par_appel": 0.0775,
+            "origine": "litellm:claude-opus-5",
+            "statut": "actuel"
+        },
+        "claude/claude-opus-4-8": {
+            "unite": "tokens",
+            "entree": 5.0,
+            "sortie": 25.0,
+            "cache_ecriture": 6.25,
+            "cache_lecture": 0.5,
+            "par_appel": 0.0775,
+            "origine": "litellm:claude-opus-4-8",
+            "statut": "actuel"
+        },
+        "claude/claude-sonnet-5": {
+            "unite": "tokens",
+            "entree": 2.0,
+            "sortie": 10.0,
+            "cache_ecriture": 2.5,
+            "cache_lecture": 0.2,
+            "par_appel": 0.031,
+            "origine": "litellm:claude-sonnet-5",
+            "statut": "actuel"
+        },
+        "claude/claude-haiku-4-5": {
+            "unite": "tokens",
+            "entree": 1.0,
+            "sortie": 5.0,
+            "cache_ecriture": 1.25,
+            "cache_lecture": 0.1,
+            "par_appel": 0.0155,
+            "origine": "litellm:claude-haiku-4-5",
+            "statut": "actuel"
+        },
+        "claude/claude-haiku-4-5-20251001": {
+            "unite": "tokens",
+            "entree": 1.0,
+            "sortie": 5.0,
+            "cache_ecriture": 1.25,
+            "cache_lecture": 0.1,
+            "par_appel": 0.0155,
+            "origine": "litellm:claude-haiku-4-5-20251001",
+            "statut": "actuel"
+        },
+        "claude/claude-sonnet-4-5": {
+            "unite": "tokens",
+            "entree": 3.0,
+            "sortie": 15.0,
+            "cache_ecriture": 3.75,
+            "cache_lecture": 0.3,
+            "par_appel": 0.0465,
+            "origine": "litellm:claude-sonnet-4-5",
+            "statut": "ancien"
+        },
+        "claude/claude-sonnet-4": {
+            "unite": "appel",
+            "par_appel": 0.018,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-07-01",
+            "note": "Absent de LiteLLM ; conservé pour l'historique des journaux."
+        },
+        "claude/claude-sonnet-4-20250514": {
+            "unite": "appel",
+            "par_appel": 0.018,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-07-01",
+            "note": "Absent de LiteLLM ; conservé pour l'historique des journaux."
+        },
+        "openai/gpt-5.6-sol": {
+            "unite": "tokens",
+            "entree": 4.0,
+            "sortie": 20.0,
+            "cache_ecriture": 5.0,
+            "cache_lecture": 0.4,
+            "par_appel": 0.062,
+            "origine": "litellm:gpt-5.6-sol",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.6-terra": {
+            "unite": "tokens",
+            "entree": 2.0,
+            "sortie": 12.0,
+            "cache_ecriture": 2.5,
+            "cache_lecture": 0.2,
+            "par_appel": 0.036,
+            "origine": "litellm:gpt-5.6-terra",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.6-luna": {
+            "unite": "tokens",
+            "entree": 0.2,
+            "sortie": 1.2,
+            "cache_ecriture": 0.25,
+            "cache_lecture": 0.02,
+            "par_appel": 0.0036,
+            "origine": "litellm:gpt-5.6-luna",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.5": {
+            "unite": "tokens",
+            "entree": 5.0,
+            "sortie": 30.0,
+            "cache_lecture": 0.5,
+            "par_appel": 0.09,
+            "origine": "litellm:gpt-5.5",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.4": {
+            "unite": "tokens",
+            "entree": 2.5,
+            "sortie": 15.0,
+            "cache_lecture": 0.25,
+            "par_appel": 0.045,
+            "origine": "litellm:gpt-5.4",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.4-mini": {
+            "unite": "tokens",
+            "entree": 0.75,
+            "sortie": 4.5,
+            "cache_lecture": 0.075,
+            "par_appel": 0.0135,
+            "origine": "litellm:gpt-5.4-mini",
+            "statut": "actuel"
+        },
+        "openai/gpt-5.4-nano": {
+            "unite": "tokens",
+            "entree": 0.2,
+            "sortie": 1.25,
+            "cache_lecture": 0.02,
+            "par_appel": 0.003725,
+            "origine": "litellm:gpt-5.4-nano",
+            "statut": "actuel"
+        },
+        "openai/gpt-5-chat-latest": {
+            "unite": "tokens",
+            "entree": 1.25,
+            "sortie": 10.0,
+            "cache_lecture": 0.125,
+            "par_appel": 0.02875,
+            "origine": "litellm:gpt-5-chat-latest",
+            "statut": "ancien"
+        },
+        "openai/gpt-3.5-turbo": {
+            "unite": "tokens",
+            "entree": 0.5,
+            "sortie": 1.5,
+            "par_appel": 0.00525,
+            "origine": "litellm:gpt-3.5-turbo",
+            "statut": "ancien"
+        },
+        "openai/gpt-4o-mini": {
+            "unite": "tokens",
+            "entree": 0.15,
+            "sortie": 0.6,
+            "cache_lecture": 0.075,
+            "par_appel": 0.00195,
+            "origine": "litellm:gpt-4o-mini",
+            "statut": "ancien"
+        },
+        "openai/gpt-4o": {
+            "unite": "tokens",
+            "entree": 2.5,
+            "sortie": 10.0,
+            "cache_lecture": 1.25,
+            "par_appel": 0.0325,
+            "origine": "litellm:gpt-4o",
+            "statut": "ancien"
+        },
+        "openai/gpt-4-turbo": {
+            "unite": "tokens",
+            "entree": 10.0,
+            "sortie": 30.0,
+            "par_appel": 0.105,
+            "origine": "litellm:gpt-4-turbo",
+            "statut": "ancien"
+        },
+        "openai/o1": {
+            "unite": "tokens",
+            "entree": 15.0,
+            "sortie": 60.0,
+            "cache_lecture": 7.5,
+            "par_appel": 0.195,
+            "origine": "litellm:o1",
+            "statut": "ancien"
+        },
+        "openai/o1-mini": {
+            "unite": "appel",
+            "par_appel": 0.012,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-08-01",
+            "note": "Absent de LiteLLM ; conservé pour l'historique des journaux."
+        },
+        "openai_image/gpt-image-2-low": {
+            "unite": "image",
+            "par_appel": 0.008,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01",
+            "note": "LiteLLM facture gpt-image au token ; prix par image 1024x1024."
+        },
+        "openai_image/gpt-image-2": {
+            "unite": "image",
+            "par_appel": 0.032,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/gpt-image-2-high": {
+            "unite": "image",
+            "par_appel": 0.125,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/gpt-image-1-low": {
+            "unite": "image",
+            "par_appel": 0.011,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/gpt-image-1": {
+            "unite": "image",
+            "par_appel": 0.042,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/gpt-image-1-high": {
+            "unite": "image",
+            "par_appel": 0.167,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "https://openai.com/api/pricing/",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/dall-e-2": {
+            "unite": "image",
+            "par_appel": 0.02,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/dall-e-3": {
+            "unite": "image",
+            "par_appel": 0.04,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-08-01"
+        },
+        "openai_image/dall-e-3-hd": {
+            "unite": "image",
+            "par_appel": 0.08,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-08-01"
+        },
+        "gemini/gemini-3.6-flash": {
+            "unite": "tokens",
+            "entree": 0.75,
+            "sortie": 3.75,
+            "cache_lecture": 0.075,
+            "par_appel": 0.011625,
+            "origine": "litellm:gemini-3.6-flash",
+            "statut": "actuel"
+        },
+        "gemini/gemini-3.5-flash": {
+            "unite": "tokens",
+            "entree": 1.5,
+            "sortie": 9.0,
+            "cache_lecture": 0.15,
+            "par_appel": 0.027,
+            "origine": "litellm:gemini-3.5-flash",
+            "statut": "actuel"
+        },
+        "gemini/gemini-3.1-pro-preview": {
+            "unite": "tokens",
+            "entree": 2.0,
+            "sortie": 12.0,
+            "cache_lecture": 0.2,
+            "par_appel": 0.036,
+            "origine": "litellm:gemini-3.1-pro-preview",
+            "statut": "actuel"
+        },
+        "gemini/gemini-2.5-flash": {
+            "unite": "tokens",
+            "entree": 0.3,
+            "sortie": 2.5,
+            "cache_lecture": 0.03,
+            "par_appel": 0.00715,
+            "origine": "litellm:gemini-2.5-flash",
+            "statut": "ancien"
+        },
+        "gemini/gemini-2.5-pro": {
+            "unite": "tokens",
+            "entree": 1.25,
+            "sortie": 10.0,
+            "cache_lecture": 0.125,
+            "par_appel": 0.02875,
+            "origine": "litellm:gemini-2.5-pro",
+            "statut": "ancien"
+        },
+        "gemini/gemini-1.5-flash": {
+            "unite": "appel",
+            "par_appel": 0.0003,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-07-01",
+            "note": "Absent de LiteLLM."
+        },
+        "gemini/gemini-2.0-flash": {
+            "unite": "appel",
+            "par_appel": 0.0003,
+            "origine": "manuel",
+            "statut": "ancien",
+            "source": "GéoPrestations 3.1.6",
+            "verifie_le": "2026-07-01",
+            "note": "Absent de LiteLLM."
+        },
+        "gemini_image/gemini-3.1-flash-image": {
+            "unite": "image",
+            "par_appel": 0.0672,
+            "origine": "litellm:gemini-3.1-flash-image",
+            "statut": "actuel"
+        },
+        "gemini_image/gemini-3.1-flash-lite-image": {
+            "unite": "image",
+            "par_appel": 0.0336,
+            "origine": "litellm:gemini-3.1-flash-lite-image",
+            "statut": "actuel"
+        },
+        "gemini_image/gemini-3-pro-image": {
+            "unite": "image",
+            "par_appel": 0.134,
+            "origine": "litellm:gemini-3-pro-image",
+            "statut": "actuel"
+        },
+        "gemini_image/gemini-2.5-flash-image": {
+            "unite": "image",
+            "par_appel": 0.039,
+            "origine": "litellm:gemini-2.5-flash-image",
+            "statut": "actuel"
+        },
+        "gemini_image/gemini-3.1-flash-image-preview": {
+            "unite": "image",
+            "par_appel": 0.0672,
+            "origine": "litellm:gemini-3.1-flash-image",
+            "statut": "ancien",
+            "note": "Modèle preview arrêté le 25/06/2026 ; prix du modèle définitif."
+        },
+        "gemini_image/gemini-3-pro-image-preview": {
+            "unite": "image",
+            "par_appel": 0.134,
+            "origine": "litellm:gemini-3-pro-image",
+            "statut": "ancien",
+            "note": "Modèle preview arrêté le 25/06/2026 ; prix du modèle définitif."
+        },
+        "google_maps/places_find": {
+            "unite": "requete",
+            "par_appel": 0.017,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://developers.google.com/maps/billing-and-pricing/pricing",
+            "verifie_le": "2026-07-01"
+        },
+        "google_maps/places_details": {
+            "unite": "requete",
+            "par_appel": 0.017,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://developers.google.com/maps/billing-and-pricing/pricing",
+            "verifie_le": "2026-07-01"
+        },
+        "google_translate/v2": {
+            "unite": "requete",
+            "par_appel": 2.0e-5,
+            "origine": "manuel",
+            "statut": "actuel",
+            "source": "https://cloud.google.com/translate/pricing",
+            "verifie_le": "2026-07-01"
+        }
+    }
+}

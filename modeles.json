@@ -1,0 +1,62 @@
+{
+  "_note": "Modèles suivis par Analytics Hub et GéoPrestations. Clé « fournisseur/modèle » (convention de GéoPrestations). « litellm » : clé reprise de LiteLLM ; « manuel » : valeur saisie ici, avec sa source.",
+  "hypotheses": {
+    "appel_texte": { "entree": 3000, "sortie": 2500, "_note": "Tokens d'un appel type de génération (prompt + article d'environ 1 400 mots), pour l'estimation par appel de GéoPrestations." }
+  },
+  "modeles": {
+    "claude/claude-fable-5-1":          { "litellm": "claude-fable-5-1" },
+    "claude/claude-opus-5-5":           { "litellm": "claude-opus-5-5" },
+    "claude/claude-opus-5":             { "litellm": "claude-opus-5" },
+    "claude/claude-opus-4-8":           { "litellm": "claude-opus-4-8" },
+    "claude/claude-sonnet-5":           { "litellm": "claude-sonnet-5" },
+    "claude/claude-haiku-4-5":          { "litellm": "claude-haiku-4-5" },
+    "claude/claude-haiku-4-5-20251001": { "litellm": "claude-haiku-4-5-20251001" },
+    "claude/claude-sonnet-4-5":         { "litellm": "claude-sonnet-4-5", "statut": "ancien" },
+    "claude/claude-sonnet-4":           { "manuel": { "unite": "appel", "par_appel": 0.018 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM ; conservé pour l'historique des journaux." },
+    "claude/claude-sonnet-4-20250514":  { "manuel": { "unite": "appel", "par_appel": 0.018 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM ; conservé pour l'historique des journaux." },
+
+    "openai/gpt-5.6-sol":               { "litellm": "gpt-5.6-sol" },
+    "openai/gpt-5.6-terra":             { "litellm": "gpt-5.6-terra" },
+    "openai/gpt-5.6-luna":              { "litellm": "gpt-5.6-luna" },
+    "openai/gpt-5.5":                   { "litellm": "gpt-5.5" },
+    "openai/gpt-5.4":                   { "litellm": "gpt-5.4" },
+    "openai/gpt-5.4-mini":              { "litellm": "gpt-5.4-mini" },
+    "openai/gpt-5.4-nano":              { "litellm": "gpt-5.4-nano" },
+    "openai/gpt-5-chat-latest":         { "litellm": "gpt-5-chat-latest", "statut": "ancien" },
+    "openai/gpt-3.5-turbo":             { "litellm": "gpt-3.5-turbo", "statut": "ancien" },
+    "openai/gpt-4o-mini":               { "litellm": "gpt-4o-mini", "statut": "ancien" },
+    "openai/gpt-4o":                    { "litellm": "gpt-4o", "statut": "ancien" },
+    "openai/gpt-4-turbo":               { "litellm": "gpt-4-turbo", "statut": "ancien" },
+    "openai/o1":                        { "litellm": "o1", "statut": "ancien" },
+    "openai/o1-mini":                   { "manuel": { "unite": "appel", "par_appel": 0.012 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01", "note": "Absent de LiteLLM ; conservé pour l'historique des journaux." },
+
+    "openai_image/gpt-image-2-low":     { "manuel": { "unite": "image", "par_appel": 0.008 }, "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01", "note": "LiteLLM facture gpt-image au token ; prix par image 1024x1024." },
+    "openai_image/gpt-image-2":         { "manuel": { "unite": "image", "par_appel": 0.032 }, "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01" },
+    "openai_image/gpt-image-2-high":    { "manuel": { "unite": "image", "par_appel": 0.125 }, "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01" },
+    "openai_image/gpt-image-1-low":     { "manuel": { "unite": "image", "par_appel": 0.011 }, "statut": "ancien", "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01" },
+    "openai_image/gpt-image-1":         { "manuel": { "unite": "image", "par_appel": 0.042 }, "statut": "ancien", "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01" },
+    "openai_image/gpt-image-1-high":    { "manuel": { "unite": "image", "par_appel": 0.167 }, "statut": "ancien", "source": "https://openai.com/api/pricing/", "verifie_le": "2026-08-01" },
+    "openai_image/dall-e-2":            { "manuel": { "unite": "image", "par_appel": 0.020 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01" },
+    "openai_image/dall-e-3":            { "manuel": { "unite": "image", "par_appel": 0.040 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01" },
+    "openai_image/dall-e-3-hd":         { "manuel": { "unite": "image", "par_appel": 0.080 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01" },
+
+    "gemini/gemini-3.6-flash":          { "litellm": "gemini-3.6-flash" },
+    "gemini/gemini-3.5-flash":          { "litellm": "gemini-3.5-flash" },
+    "gemini/gemini-3.1-pro-preview":    { "litellm": "gemini-3.1-pro-preview" },
+    "gemini/gemini-2.5-flash":          { "litellm": "gemini-2.5-flash", "statut": "ancien" },
+    "gemini/gemini-2.5-pro":            { "litellm": "gemini-2.5-pro", "statut": "ancien" },
+    "gemini/gemini-1.5-flash":          { "manuel": { "unite": "appel", "par_appel": 0.0003 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM." },
+    "gemini/gemini-2.0-flash":          { "manuel": { "unite": "appel", "par_appel": 0.0003 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM." },
+
+    "gemini_image/gemini-3.1-flash-image":         { "litellm": "gemini-3.1-flash-image" },
+    "gemini_image/gemini-3.1-flash-lite-image":    { "litellm": "gemini-3.1-flash-lite-image" },
+    "gemini_image/gemini-3-pro-image":             { "litellm": "gemini-3-pro-image" },
+    "gemini_image/gemini-2.5-flash-image":         { "litellm": "gemini-2.5-flash-image" },
+    "gemini_image/gemini-3.1-flash-image-preview": { "litellm": "gemini-3.1-flash-image", "statut": "ancien", "note": "Modèle preview arrêté le 25/06/2026 ; prix du modèle définitif." },
+    "gemini_image/gemini-3-pro-image-preview":     { "litellm": "gemini-3-pro-image", "statut": "ancien", "note": "Modèle preview arrêté le 25/06/2026 ; prix du modèle définitif." },
+
+    "google_maps/places_find":          { "manuel": { "unite": "requete", "par_appel": 0.017 }, "source": "https://developers.google.com/maps/billing-and-pricing/pricing", "verifie_le": "2026-07-01" },
+    "google_maps/places_details":       { "manuel": { "unite": "requete", "par_appel": 0.017 }, "source": "https://developers.google.com/maps/billing-and-pricing/pricing", "verifie_le": "2026-07-01" },
+    "google_translate/v2":              { "manuel": { "unite": "requete", "par_appel": 0.00002 }, "source": "https://cloud.google.com/translate/pricing", "verifie_le": "2026-07-01" }
+  }
+}
