@@ -1,9 +1,9 @@
 {
     "schema": "dc-tarifs-ia/1",
-    "genere_le": "2026-10-14",
+    "genere_le": "2026-11-25",
     "litellm": {
-        "commit": "2f3ccbe7c77d",
-        "date": "2026-10-14"
+        "commit": "b4589fc7d1ca",
+        "date": "2026-11-25"
     },
     "hypotheses": {
         "appel_texte": {
@@ -30,6 +30,16 @@
             "cache_lecture": 0.01,
             "par_appel": 0.00155,
             "origine": "litellm:claude-haiku-5-5",
+            "statut": "actuel"
+        },
+        "claude/claude-fable-5-2": {
+            "unite": "tokens",
+            "entree": 8.0,
+            "sortie": 40.0,
+            "cache_ecriture": 10.0,
+            "cache_lecture": 0.2,
+            "par_appel": 0.124,
+            "origine": "litellm:claude-fable-5-2",
             "statut": "actuel"
         },
         "claude/claude-fable-5-1": {
@@ -129,6 +139,26 @@
             "source": "GéoPrestations 3.1.6",
             "verifie_le": "2026-07-01",
             "note": "Absent de LiteLLM ; conservé pour l'historique des journaux."
+        },
+        "openai/gpt-6.1-sol": {
+            "unite": "tokens",
+            "entree": 2.0,
+            "sortie": 10.0,
+            "cache_ecriture": 2.5,
+            "cache_lecture": 0.1,
+            "par_appel": 0.031,
+            "origine": "litellm:gpt-6.1-sol",
+            "statut": "actuel"
+        },
+        "openai/gpt-6.1-terra": {
+            "unite": "tokens",
+            "entree": 1.0,
+            "sortie": 5.0,
+            "cache_ecriture": 1.25,
+            "cache_lecture": 0.05,
+            "par_appel": 0.0155,
+            "origine": "litellm:gpt-6.1-terra",
+            "statut": "actuel"
         },
         "openai/gpt-6-astra": {
             "unite": "tokens",
@@ -359,6 +389,15 @@
             "statut": "ancien",
             "source": "GéoPrestations 3.1.6",
             "verifie_le": "2026-08-01"
+        },
+        "gemini/gemini-3.8-flash": {
+            "unite": "tokens",
+            "entree": 0.75,
+            "sortie": 3.75,
+            "cache_lecture": 0.075,
+            "par_appel": 0.011625,
+            "origine": "litellm:gemini-3.8-flash",
+            "statut": "actuel"
         },
         "gemini/gemini-3.7-flash": {
             "unite": "tokens",

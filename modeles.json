@@ -6,6 +6,7 @@
   "modeles": {
     "claude/claude-sonnet-5-5":         { "litellm": "claude-sonnet-5-5" },
     "claude/claude-haiku-5-5":          { "litellm": "claude-haiku-5-5" },
+    "claude/claude-fable-5-2":          { "litellm": "claude-fable-5-2" },
     "claude/claude-fable-5-1":          { "litellm": "claude-fable-5-1" },
     "claude/claude-opus-5-5":           { "litellm": "claude-opus-5-5" },
     "claude/claude-opus-5":             { "litellm": "claude-opus-5" },
@@ -17,6 +18,8 @@
     "claude/claude-sonnet-4":           { "manuel": { "unite": "appel", "par_appel": 0.018 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM ; conservé pour l'historique des journaux." },
     "claude/claude-sonnet-4-20250514":  { "manuel": { "unite": "appel", "par_appel": 0.018 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-07-01", "note": "Absent de LiteLLM ; conservé pour l'historique des journaux." },
 
+    "openai/gpt-6.1-sol":               { "litellm": "gpt-6.1-sol" },
+    "openai/gpt-6.1-terra":             { "litellm": "gpt-6.1-terra" },
     "openai/gpt-6-astra":               { "litellm": "gpt-6-astra" },
     "openai/gpt-6-sol":                 { "litellm": "gpt-6-sol" },
     "openai/gpt-6-luna":                { "litellm": "gpt-6-luna" },
@@ -45,6 +48,7 @@
     "openai_image/dall-e-3":            { "manuel": { "unite": "image", "par_appel": 0.040 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01" },
     "openai_image/dall-e-3-hd":         { "manuel": { "unite": "image", "par_appel": 0.080 }, "statut": "ancien", "source": "GéoPrestations 3.1.6", "verifie_le": "2026-08-01" },
 
+    "gemini/gemini-3.8-flash":          { "litellm": "gemini-3.8-flash" },
     "gemini/gemini-3.7-flash":          { "litellm": "gemini-3.7-flash" },
     "gemini/gemini-3.6-flash":          { "litellm": "gemini-3.6-flash" },
     "gemini/gemini-3.5-flash":          { "litellm": "gemini-3.5-flash" },
